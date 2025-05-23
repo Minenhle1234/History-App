@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/historybackgroundimage"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/appText"
+        android:layout_width="203dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="History Quiz!"
+        android:textColor="#FFFFFF"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/appDescriptionText"
+        android:layout_width="226dp"
+        android:layout_height="151dp"
+        android:gravity="center"
+        android:text="Welcome To The History App. In This App You Will Be Answering 5 TRUE Or FALSE Questions.These Flashcards Are Going To Help Ensure That You Are Well Prepared For Your History Test.Press The START Button To Begin Your Quiz! "
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="153dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#03A9F4"
+        android:gravity="center"
+        android:text="START"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+</androidx.constraintlayout.widget.ConstraintLayout>
