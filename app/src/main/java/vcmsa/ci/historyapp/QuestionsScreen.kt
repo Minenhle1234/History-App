@@ -44,6 +44,12 @@ class QuestionsScreen : AppCompatActivity() {
         nextButton = findViewById(R.id.nextButton)
         answerText = findViewById(R.id.answerText)
 
+        // Title: history quiz App MainActivity
+        // Author: Developer
+        // Date: 17 May 2025
+        // Version: 1.0
+        // Available:https://developer.android.com/reference/android/app/Activity
+        // Additional References:https://developer.android.com/reference/android/widget/Button
         showQuestion()
 
         trueButton.setOnClickListener {
@@ -70,6 +76,13 @@ class QuestionsScreen : AppCompatActivity() {
         answerText.text = "" // Clear previous feedback
         nextButton.visibility = View.GONE
     }
+
+
+    // Title: Kotlin If ... Else
+    // Author: w3schools
+    // Date: 20 May 2025
+    // Version: 1.0
+    // Available: https://www.w3schools.com/kotlin/kotlin_conditions.php
 
     private fun checkAnswer(userAnswer: Boolean) {
         val correctAnswer = answers[currentQuestionIndex]

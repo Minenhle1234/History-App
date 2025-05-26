@@ -16,13 +16,22 @@ class ReviewScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_review_screen)
 
+       // initialise the variables
         exitButton = findViewById(R.id.exitButton)
         reviewContainer = findViewById(R.id.reviewContainer)
 
+        // Title: How to set the review screen after an action has been completed?
+        // Author: "Adil Sombrero" on Stack Overflow
+        // Date: 12 November 2013
+        // Version: 1.0
+        // Available: https://stackoverflow.com/questions/7241808/how-to-reset-edittext-after-an-action-has-been-completed/7241832
+
+        //declare the components that are used
         val questions = intent.getStringArrayExtra("QUESTIONS")
         val answers = intent.getStringArrayExtra("ANSWERS")
         val userAnswers = intent.getBooleanArrayExtra("USER_ANSWERS")
 
+        //if statement for the review screen
         if (questions != null && answers != null && userAnswers != null) {
             for (i in questions.indices) {
                 val questionView = TextView(this).apply {

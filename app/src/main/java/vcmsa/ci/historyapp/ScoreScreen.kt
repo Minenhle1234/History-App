@@ -26,6 +26,13 @@ class ScoreScreen : AppCompatActivity() {
         reviewButton = findViewById(R.id.ReviewButton)
         exitButton = findViewById(R.id.exitButton)
 
+        // Title:How do I handle errors in Kotlin arrows
+        // Author: pbuchheit
+        // Date: 31 July 2024
+        // Version: 1.0
+        // Available:https://stackoverflow.com/questions/78817291/how-do-i-handle-logical-errors-in-kotlin-arrow
+
+        // validation: check if the input is correctly filled
         // Receive data from the quiz
         val score = intent.getIntExtra("SCORE", 0)
         val totalQuestions = 5
