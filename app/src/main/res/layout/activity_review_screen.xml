@@ -56,7 +56,7 @@
         android:backgroundTint="#F7A6B2"
         android:text="EXIT"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:elevation="8dp"
         android:layout_marginBottom="20dp"
