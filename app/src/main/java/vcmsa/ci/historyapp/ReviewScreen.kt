@@ -21,6 +21,14 @@ class ReviewScreen : AppCompatActivity() {
         exitButton = findViewById(R.id.exitButton)
         reviewContainer = findViewById(R.id.reviewContainer)
 
+
+        // Title:How do I handle errors in Kotlin arrows
+        // Author: pbuchheit
+        // Date: 01 July 2024
+        // Version: 1.0
+        // Available:https://stackoverflow.com/questions/78817291/how-do-i-handle-logical-errors-in-kotlin-arrow
+
+        // validation: check if the input is correctly filled
         val questions = intent.getStringArrayExtra("QUESTIONS")
         val answers = intent.getStringArrayExtra("ANSWERS")
         val userAnswers = intent.getBooleanArrayExtra("USER_ANSWERS")
