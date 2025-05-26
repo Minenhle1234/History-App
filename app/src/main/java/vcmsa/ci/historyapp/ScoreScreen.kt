@@ -11,6 +11,14 @@ import androidx.core.content.ContextCompat
 
 class ScoreScreen : AppCompatActivity() {
 
+    // Title: History Quiz App QuestionScreen
+    // Author: Developer
+    // Date: 20 May 2025
+    // Version: 1.0
+    // Available:https://developer.android.com/reference/android/app/Activity
+    // Additional References:https://developer.android.com/reference/android/widget/variables
+
+
     private lateinit var scoreText: TextView
     private lateinit var feedbackText: TextView
     private lateinit var reviewButton: Button
