@@ -17,6 +17,7 @@ class ScoreScreen : AppCompatActivity() {
     private lateinit var exitButton: Button
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
