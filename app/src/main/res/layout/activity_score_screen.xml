@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/ScoreText"
+        android:id="@+id/scoreText"
         android:layout_width="173dp"
         android:layout_height="147dp"
         android:gravity="center"
