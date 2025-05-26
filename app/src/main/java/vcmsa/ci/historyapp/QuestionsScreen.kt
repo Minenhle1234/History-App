@@ -113,6 +113,12 @@ class QuestionsScreen : AppCompatActivity() {
         falseButton.isEnabled = false
         nextButton.isEnabled = true
     }
+    // Title: How to create a private function?
+    // Author: "Adil Sombrero" on Stack Overflow
+    // Date: 12 November 2013
+    // Version: 1.0
+    // Available: https://stackoverflow.com/questions/7241808/how-to-reset-edittext-after-an-action-has-been-completed/7241832
+
 
     private fun moveToTheFollowingQuestion() {
         currentQuestionIndex++
