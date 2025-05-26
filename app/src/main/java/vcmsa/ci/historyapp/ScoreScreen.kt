@@ -37,6 +37,12 @@ class ScoreScreen : AppCompatActivity() {
         reviewButton = findViewById(R.id.ReviewButton)
         exitButton = findViewById(R.id.exitButton)
 
+        // Title: Kotlin If ... Else
+        // Author: w3schools
+        // Date: 12 May 2025
+        // Version: 1.0
+        // Available: https://www.w3schools.com/kotlin/kotlin_conditions.php
+
         // Get the score passed from the previous activity
         val score = intent.getIntExtra("SCORE", 0)
 
