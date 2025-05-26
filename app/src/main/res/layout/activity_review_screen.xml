@@ -5,40 +5,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/reviewRoot"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#C5EFD2"
+    tools:context=".ReviewScreen">
 
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review Your Answers"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#6D7A8C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="413dp"
-        android:layout_height="825dp"
-        android:background="#589413"
-        android:padding="16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#BFDCF8"
+        android:padding="20dp"
+        android:elevation="6dp"
         android:importantForAccessibility="no"
-        app:layout_constraintBottom_toTopOf="@+id/exitButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginHorizontal="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toTopOf="@id/exitButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:id="@+id/reviewContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            android:divider="?android:attr/dividerVertical"
+            android:showDividers="middle"
+            android:dividerPadding="8dp" />
     </ScrollView>
 
     <Button
         android:id="@+id/exitButton"
-        android:layout_width="153dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#FA1403"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#F7A6B2"
         android:text="EXIT"
         android:textColor="#FFFFFF"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:elevation="8dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

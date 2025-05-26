@@ -1,16 +1,14 @@
 package vcmsa.ci.historyapp
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.content.ContextCompat
 
 class ReviewScreen : AppCompatActivity() {
+
     private lateinit var exitButton: Button
     private lateinit var reviewContainer: LinearLayout
 
@@ -21,14 +19,6 @@ class ReviewScreen : AppCompatActivity() {
         exitButton = findViewById(R.id.exitButton)
         reviewContainer = findViewById(R.id.reviewContainer)
 
-
-        // Title:How do I handle errors in Kotlin arrows
-        // Author: pbuchheit
-        // Date: 01 July 2024
-        // Version: 1.0
-        // Available:https://stackoverflow.com/questions/78817291/how-do-i-handle-logical-errors-in-kotlin-arrow
-
-        // validation: check if the input is correctly filled
         val questions = intent.getStringArrayExtra("QUESTIONS")
         val answers = intent.getStringArrayExtra("ANSWERS")
         val userAnswers = intent.getBooleanArrayExtra("USER_ANSWERS")
@@ -37,38 +27,37 @@ class ReviewScreen : AppCompatActivity() {
             for (i in questions.indices) {
                 val questionView = TextView(this).apply {
                     text = "Q${i + 1}: ${questions[i]}"
-                    textSize = 16f
+                    textSize = 18f
+                    setPadding(0, 16, 0, 4)
                 }
 
                 val answerView = TextView(this).apply {
                     text = "Correct Answer: ${answers[i]}"
-                    setTextColor(resources.getColor(android.R.color.holo_green_dark, theme))
+                    textSize = 16f
+                    setTextColor(ContextCompat.getColor(this@ReviewScreen, android.R.color.holo_green_dark))
                 }
 
                 val userAnswerView = TextView(this).apply {
                     val result = if (userAnswers[i]) "Correct" else "Incorrect"
                     text = "Your Answer: $result"
+                    textSize = 16f
                     setTextColor(
-                        resources.getColor(
-                            if (userAnswers[i]) android.R.color.holo_green_dark else android.R.color.holo_red_dark,
-                            theme
+                        ContextCompat.getColor(
+                            this@ReviewScreen,
+                            if (userAnswers[i]) android.R.color.holo_green_dark else android.R.color.holo_red_dark
                         )
                     )
                 }
 
-                // Title: Kotlin how to add a review container
-                // Author: w3schools
-                // Date: 19 May 2025
-                // Version: 1.0
-                // Available: https://www.w3schools.com/kotlin/kotlin_conditions.php
-
+                // Add everything to the container
                 reviewContainer.addView(questionView)
                 reviewContainer.addView(answerView)
                 reviewContainer.addView(userAnswerView)
 
-                // Add spacing
+                // Spacer
                 val spacer = TextView(this)
-                spacer.text = "\n"
+                spacer.text = ""
+                spacer.textSize = 8f
                 reviewContainer.addView(spacer)
             }
         }
