@@ -10,6 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 
 class QuestionsScreen : AppCompatActivity() {
 
+    // Title: History Quiz App QuestionScreen
+    // Author: Developer
+    // Date: 20 May 2025
+    // Version: 1.0
+    // Available:https://developer.android.com/reference/android/app/Activity
+    // Additional References:https://developer.android.com/reference/android/widget/variables
+
     // Declare and initialize the parallel arrays: questions and answers
     private val questions = arrayOf(
         "The Great Wall Of China Was Not Built To Protect China From Intruders",
@@ -43,6 +50,13 @@ class QuestionsScreen : AppCompatActivity() {
         trueButton = findViewById(R.id.trueButton)
         falseButton = findViewById(R.id.falseButton)
         nextButton = findViewById(R.id.nextButton)
+
+        // Title: History Quiz App QuestionScreen
+        // Author: Developer
+        // Date: 22 May 2025
+        // Version: 1.0
+        // Available:https://developer.android.com/reference/android/app/Activity
+        // Additional References:https://developer.android.com/reference/android/widget/Button
 
         // Hide answerText initially and disable the next button
         answerText.visibility = View.INVISIBLE
