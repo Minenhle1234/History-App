@@ -56,6 +56,12 @@ class ReviewScreen : AppCompatActivity() {
                     )
                 }
 
+                // Title: Kotlin how to add a review container
+                // Author: w3schools
+                // Date: 19 May 2025
+                // Version: 1.0
+                // Available: https://www.w3schools.com/kotlin/kotlin_conditions.php
+
                 reviewContainer.addView(questionView)
                 reviewContainer.addView(answerView)
                 reviewContainer.addView(userAnswerView)
