@@ -88,6 +88,12 @@ class QuestionsScreen : AppCompatActivity() {
         selectedAnswer = false
     }
 
+    // Title: Kotlin If ... Else
+    // Author: w3schools
+    // Date: 20 May 2025
+    // Version: 1.0
+    // Available: https://www.w3schools.com/kotlin/kotlin_conditions.php
+
     private fun checkAnswer(userAnswer: Boolean) {
         if (selectedAnswer) return
 
